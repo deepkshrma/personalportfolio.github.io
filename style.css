@@ -221,10 +221,12 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
+    background: url("images/Profile-1.jpg") no-repeat center;
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 6px;
+    background-size: cover;
 }
 .about .about-content .right{
     width: 55%;
@@ -269,7 +271,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+   
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -379,9 +381,7 @@ section .title::after{
 }
 
 /* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
+
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -394,9 +394,9 @@ section .title::after{
     background: crimson;
 }
 .teams .carousel .card .box{
-    display: flex;
+    display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     justify-content: center;
     transition: all 0.3s ease;
 }
@@ -409,11 +409,13 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .teams .carousel .card img{
+    background: url("images/Profile-1.jpg") no-repeat center;
+    background-size: cover;
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid rgb(175, 111, 111);
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
